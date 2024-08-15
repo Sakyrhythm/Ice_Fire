@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ice_fire:fire_crystal_shard_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "ice_fire:fire_crystal_shard"
+  }
+}

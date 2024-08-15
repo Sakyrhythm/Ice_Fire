@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "com.sakyrhythm.ice_fire.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"Ice_FireMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

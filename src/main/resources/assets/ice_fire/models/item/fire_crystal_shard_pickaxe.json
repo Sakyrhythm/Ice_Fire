@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ice_fire:item/fire_crystal_shard_pickaxe"
+  }
+}

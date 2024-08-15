@@ -1,0 +1,18 @@
+{
+  "itemGroup.fabric_docs_reference": "冰与火",
+  "item.ice_fire.ice_diamond": "冰之钻石",
+  "block.ice_fire.ice_diamond_block": "冰之钻石块",
+  "item.ice_fire.fire_crystal_shard": "火之水晶",
+  "block.ice_fire.fire_crystal_shard_block": "火之水晶块",
+
+  "item.ice_fire.fire_crystal_shard_sword": "火之剑",
+  "item.ice_fire.fire_crystal_shard_hoe": "火之锄",
+  "item.ice_fire.fire_crystal_shard_pickaxe": "火之镐",
+  "item.ice_fire.fire_crystal_shard_axe": "火之斧",
+  "item.ice_fire.fire_crystal_shard_shovel": "火之铲",
+  "item.ice_fire.ice_diamond_sword": "冰之剑",
+  "item.ice_fire.ice_diamond_hoe": "冰之锄",
+  "item.ice_fire.ice_diamond_pickaxe": "冰之镐",
+  "item.ice_fire.ice_diamond_axe": "冰之斧",
+  "item.ice_fire.ice_diamond_shovel": "冰之铲"
+}

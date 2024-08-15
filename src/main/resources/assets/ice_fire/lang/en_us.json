@@ -1,0 +1,18 @@
+{
+  "itemGroup.fabric_docs_reference": "ICE_FIRE",
+  "item.ice_fire.ice_diamond": "ICE Diamond",
+  "block.ice_fire.ice_diamond_block": "ICE Diamond Block",
+  "item.ice_fire.fire_crystal_shard": "FIRE CRYSTAL SHARD",
+  "block.ice_fire.fire_crystal_shard_block": "FIRE CRYSTAL SHARD Block",
+
+  "item.ice_fire.fire_crystal_shard_sword": "FIRE CRYSTAL SHARD SWORD",
+  "item.ice_fire.fire_crystal_shard_hoe": "FIRE CRYSTAL SHARD HOE",
+  "item.ice_fire.fire_crystal_shard_pickaxe": "FIRE CRYSTAL SHARD PICKAXE",
+  "item.ice_fire.fire_crystal_shard_axe": "FIRE CRYSTAL SHARD AXE",
+  "item.ice_fire.fire_crystal_shard_shovel": "FIRE CRYSTAL SHARD SHOVEL",
+  "item.ice_fire.ice_diamond_sword": "ICE DIAMOND SWORD",
+  "item.ice_fire.ice_diamond_hoe": "ICE DIAMOND HOE",
+  "item.ice_fire.ice_diamond_pickaxe": "ICE DIAMOND PICKAXE",
+  "item.ice_fire.ice_diamond_axe": "ICE DIAMOND AXE",
+  "item.ice_fire.ice_diamond_shovel": "ICE DIAMOND SHOVEL"
+}

@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "ice_fire",
+	"version": "${version}",
+	"name": "Ice_Fire",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ice_fire/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+			"com.sakyrhythm.ice_fire.Ice_FireDataGenerator"
+		],
+		"client": [
+			"com.sakyrhythm.ice_fire.Ice_FireClient"
+		],
+		"main": [
+			"com.sakyrhythm.ice_fire.Ice_Fire"
+		]
+	},
+	"mixins": [
+		"ice_fire.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
