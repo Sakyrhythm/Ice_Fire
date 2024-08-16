@@ -58,15 +58,15 @@ public class ModItems {
     public static final Item ACTIVATED_ICE_DIAMOND_AXE = registerItems("activated_ice_diamond_axe",new ActivatedFireCrystalShardAxe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,33.0F,0.0F))));
     //激活火属性装备
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SHOVEL = registerItems("activated_fire_crystal_shard_shovel",new ShovelItem(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SHOVEL = registerItems("activated_fire_crystal_shard_shovel",new ActivatedFireCrystalShardShovel(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,1.5F,0.0F))));
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SWORD = registerItems("activated_fire_crystal_shard_sword",new SwordItem(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SWORD = registerItems("activated_fire_crystal_shard_sword",new ActivatedFireCrystalShardSword(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,26.0F,0.0F))));
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_PICKAXE = registerItems("activated_fire_crystal_shard_pickaxe",new PickaxeItem(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_PICKAXE = registerItems("activated_fire_crystal_shard_pickaxe",new ActivatedFireCrystalShardPickAxe(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,1F,0.0F))));
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_HOE = registerItems("activated_fire_crystal_shard_hoe",new HoeItem(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_HOE = registerItems("activated_fire_crystal_shard_hoe",new ActivatedFireCrystalShardHoe(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,-4.0F,0.0F))));
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_AXE = registerItems("activated_fire_crystal_shard_axe",new AxeItem(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_AXE = registerItems("activated_fire_crystal_shard_axe",new ActivatedFireCrystalShardAxe(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,33.0F,0.0F))));
 
     private static Item registerItems(String name,Item item){
