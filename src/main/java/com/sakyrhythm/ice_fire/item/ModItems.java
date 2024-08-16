@@ -4,9 +4,13 @@ import com.sakyrhythm.ice_fire.Ice_Fire;
 import com.sakyrhythm.ice_fire.block.ICE_DIAMOND_BLOCK;
 import com.sakyrhythm.ice_fire.block.ModBlocks;
 import com.sakyrhythm.ice_fire.item.ActivatedFireTool.*;
+import com.sakyrhythm.ice_fire.item.ActivatedIceTool.*;
+import com.sakyrhythm.ice_fire.item.ActivatedIceTool.ActivatedIceDiamondItem;
+import com.sakyrhythm.ice_fire.item.ActivatedIceTool.ActivatedIceDiamondPickAxe;
+import com.sakyrhythm.ice_fire.item.ActivatedIceTool.ActivatedIceDiamondShovel;
+import com.sakyrhythm.ice_fire.item.ActivatedIceTool.ActivatedIceDiamondSword;
 import com.sakyrhythm.ice_fire.item.FireTool.*;
 import com.sakyrhythm.ice_fire.item.IceTool.*;
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -20,15 +24,15 @@ import net.minecraft.text.Text;
 public class ModItems {
     public static final Item ICE_DIAMOND = registerItems("ice_diamond",new IceDiamondItem(new Item.Settings()));
     public static final Item FIRE_CRYSTAL_SHARD = registerItems("fire_crystal_shard",new FireCrystalShardItem(new Item.Settings()));
-    public static final Item ACTIVATED_ICE_DIAMOND = registerItems("activated_ice_diamond",new ActivatedFireCrystalShardItem(new Item.Settings()));
-    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD = registerItems("activated_fire_crystal_shard",new Item(new Item.Settings()));
+    public static final Item ACTIVATED_ICE_DIAMOND = registerItems("activated_ice_diamond",new ActivatedIceDiamondItem(new Item.Settings()));
+    public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD = registerItems("activated_fire_crystal_shard",new ActivatedFireCrystalShardItem(new Item.Settings()));
 
     //冰属性装备
-    public static final Item ICE_DIAMOND_SHOVEL = registerItems("ice_diamond_shovel",new IceDiamondShovel(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
+    public static final Item ICE_DIAMOND_SHOVEL = registerItems("ice_diamond_shovel",new ActivatedIceDiamondShovel(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ICE_DIAMOND,1.5F,0.0F))));
-    public static final Item ICE_DIAMOND_SWORD = registerItems("ice_diamond_sword",new IceDiamondSword(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
+    public static final Item ICE_DIAMOND_SWORD = registerItems("ice_diamond_sword",new ActivatedIceDiamondSword(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ICE_DIAMOND,14.0F,0.0F))));
-    public static final Item ICE_DIAMOND_PICKAXE = registerItems("ice_diamond_pickaxe",new IceDiamondPickAxe(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
+    public static final Item ICE_DIAMOND_PICKAXE = registerItems("ice_diamond_pickaxe",new ActivatedIceDiamondPickAxe(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ICE_DIAMOND,1F,0.0F))));
     public static final Item ICE_DIAMOND_HOE = registerItems("ice_diamond_hoe",new IceDiamondHoe(ModToolMaterial.ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ICE_DIAMOND,-4.0F,0.0F))));
@@ -47,15 +51,15 @@ public class ModItems {
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.FIRE_CRYSTAL_SHARD,32.0F,0.0F))));
 
     //激活冰属性装备
-    public static final Item ACTIVATED_ICE_DIAMOND_SHOVEL = registerItems("activated_ice_diamond_shovel",new ActivatedFireCrystalShardShovel(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
+    public static final Item ACTIVATED_ICE_DIAMOND_SHOVEL = registerItems("activated_ice_diamond_shovel",new ActivatedIceDiamondShovel(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,1.5F,0.0F))));
-    public static final Item ACTIVATED_ICE_DIAMOND_SWORD = registerItems("activated_ice_diamond_sword",new ActivatedFireCrystalShardSword(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
+    public static final Item ACTIVATED_ICE_DIAMOND_SWORD = registerItems("activated_ice_diamond_sword",new ActivatedIceDiamondSword(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,26.0F,0.0F))));
-    public static final Item ACTIVATED_ICE_DIAMOND_PICKAXE = registerItems("activated_ice_diamond_pickaxe",new ActivatedFireCrystalShardPickAxe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
+    public static final Item ACTIVATED_ICE_DIAMOND_PICKAXE = registerItems("activated_ice_diamond_pickaxe",new ActivatedIceDiamondPickAxe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,1F,0.0F))));
-    public static final Item ACTIVATED_ICE_DIAMOND_HOE = registerItems("activated_ice_diamond_hoe",new ActivatedFireCrystalShardHoe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
+    public static final Item ACTIVATED_ICE_DIAMOND_HOE = registerItems("activated_ice_diamond_hoe",new ActivatedIceDiamondHoe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,-4.0F,0.0F))));
-    public static final Item ACTIVATED_ICE_DIAMOND_AXE = registerItems("activated_ice_diamond_axe",new ActivatedFireCrystalShardAxe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
+    public static final Item ACTIVATED_ICE_DIAMOND_AXE = registerItems("activated_ice_diamond_axe",new ActivatedIceDiamondAxe(ModToolMaterial.ACTIVATED_ICE_DIAMOND,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_ICE_DIAMOND,33.0F,0.0F))));
     //激活火属性装备
     public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SHOVEL = registerItems("activated_fire_crystal_shard_shovel",new ActivatedFireCrystalShardShovel(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
