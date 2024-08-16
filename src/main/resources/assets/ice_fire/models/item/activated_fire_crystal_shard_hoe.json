@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "ice_fire:item/activated_fire_crystal_shard_hoe"
+  }
+}
