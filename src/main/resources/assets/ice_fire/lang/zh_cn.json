@@ -28,5 +28,10 @@
   "item.ice_fire.activated_ice_diamond_hoe": "激活冰之锄",
   "item.ice_fire.activated_ice_diamond_pickaxe": "激活冰之镐",
   "item.ice_fire.activated_ice_diamond_axe": "激活冰之斧",
-  "item.ice_fire.activated_ice_diamond_shovel": "激活冰之铲"
+  "item.ice_fire.activated_ice_diamond_shovel": "激活冰之铲",
+
+  "item.ice_fire.ice_diamond_helmet": "冰之钻石头盔",
+  "item.ice_fire.ice_diamond_chestplate": "冰之钻石胸甲",
+  "item.ice_fire.ice_diamond_leggings": "冰之钻石护腿",
+  "item.ice_fire.ice_diamond_boots": "冰之钻石靴子"
 }

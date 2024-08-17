@@ -28,5 +28,10 @@
   "item.ice_fire.activated_ice_diamond_hoe": "ACTIVATED ICE DIAMOND HOE",
   "item.ice_fire.activated_ice_diamond_pickaxe": "ACTIVATED ICE DIAMOND PICKAXE",
   "item.ice_fire.activated_ice_diamond_axe": "ACTIVATED ICE DIAMOND AXE",
-  "item.ice_fire.activated_ice_diamond_shovel": "ACTIVATED ICE DIAMOND SHOVEL"
+  "item.ice_fire.activated_ice_diamond_shovel": "ACTIVATED ICE DIAMOND SHOVEL",
+
+  "item.ice_fire.ice_diamond_helmet": "ICE DIAMOND HELMET",
+  "item.ice_fire.ice_diamond_chestplate": "ICE DIAMOND CHESTPLATE",
+  "item.ice_fire.ice_diamond_leggings": "ICE DIAMOND LEGGINGS",
+  "item.ice_fire.ice_diamond_boots": "ICE DIAMOND BOOTS"
 }
