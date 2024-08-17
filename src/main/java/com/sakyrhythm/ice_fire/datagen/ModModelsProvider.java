@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.ArmorItem;
 
 public class ModModelsProvider extends FabricModelProvider {
     public ModModelsProvider(FabricDataOutput output) {
@@ -22,5 +23,9 @@ public class ModModelsProvider extends FabricModelProvider {
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.FIRE_CRYSTAL_SHARD, Models.GENERATED);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_BOOTS);
     }
 }

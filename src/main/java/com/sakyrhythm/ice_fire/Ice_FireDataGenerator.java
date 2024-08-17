@@ -14,7 +14,6 @@ public class Ice_FireDataGenerator implements DataGeneratorEntrypoint {
 
 		pack.addProvider(ModModelsProvider::new);
 		pack.addProvider(ModBlockTagsProvider::new);
-		pack.addProvider(ModENUSLanProvider::new);
 		pack.addProvider(ModItemTagsProvider::new);
 	}
 }
