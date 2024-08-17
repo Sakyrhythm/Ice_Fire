@@ -27,5 +27,9 @@ public class ModModelsProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_CHESTPLATE);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_LEGGINGS);
         itemModelGenerator.registerArmor((ArmorItem) ModItems.ICE_DIAMOND_BOOTS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.FIRE_CRYSTAL_SHARD_HELMET);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.FIRE_CRYSTAL_SHARD_CHESTPLATE);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.FIRE_CRYSTAL_SHARD_LEGGINGS);
+        itemModelGenerator.registerArmor((ArmorItem) ModItems.FIRE_CRYSTAL_SHARD_BOOTS);
     }
 }

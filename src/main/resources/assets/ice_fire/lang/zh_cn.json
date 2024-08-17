@@ -33,5 +33,10 @@
   "item.ice_fire.ice_diamond_helmet": "冰之钻石头盔",
   "item.ice_fire.ice_diamond_chestplate": "冰之钻石胸甲",
   "item.ice_fire.ice_diamond_leggings": "冰之钻石护腿",
-  "item.ice_fire.ice_diamond_boots": "冰之钻石靴子"
+  "item.ice_fire.ice_diamond_boots": "冰之钻石靴子",
+
+  "item.ice_fire.fire_crystal_shard_helmet": "火之水晶头盔",
+  "item.ice_fire.fire_crystal_shard_chestplate": "火之水晶胸甲",
+  "item.ice_fire.fire_crystal_shard_leggings": "火之水晶护腿",
+  "item.ice_fire.fire_crystal_shard_boots": "火之水晶靴子"
 }

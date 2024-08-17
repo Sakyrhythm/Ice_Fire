@@ -3,6 +3,10 @@
     "ice_fire:ice_diamond_helmet",
     "ice_fire:ice_diamond_chestplate",
     "ice_fire:ice_diamond_leggings",
-    "ice_fire:ice_diamond_boots"
+    "ice_fire:ice_diamond_boots",
+    "ice_fire:fire_crystal_shard_helmet",
+    "ice_fire:fire_crystal_shard_chestplate",
+    "ice_fire:fire_crystal_shard_leggings",
+    "ice_fire:fire_crystal_shard_boots"
   ]
 }

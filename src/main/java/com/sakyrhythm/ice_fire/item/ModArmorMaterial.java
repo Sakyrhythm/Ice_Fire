@@ -24,15 +24,14 @@ public class ModArmorMaterial {
         map.put(ArmorItem.Type.CHESTPLATE, 9);
         map.put(ArmorItem.Type.HELMET, 4);
         map.put(ArmorItem.Type.BODY, 13);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.ofItems(ModItems.ICE_DIAMOND));
-    public static final RegistryEntry<ArmorMaterial> FIRE_CRYSTAL_SHARD = register("fire_crystal_shard"
-            , Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 10.0F, 0.1F, () -> Ingredient.ofItems(ModItems.ICE_DIAMOND));
+    public static final RegistryEntry<ArmorMaterial> FIRE_CRYSTAL_SHARD = register("fire_crystal_shard", Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 8);
         map.put(ArmorItem.Type.LEGGINGS, 14);
         map.put(ArmorItem.Type.CHESTPLATE, 18);
         map.put(ArmorItem.Type.HELMET, 8);
         map.put(ArmorItem.Type.BODY, 26);
-    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 3.0F, 0.1F, () -> Ingredient.ofItems(ModItems.FIRE_CRYSTAL_SHARD));
+    }), 15, SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 10.0F, 0.1F, () -> Ingredient.ofItems(ModItems.FIRE_CRYSTAL_SHARD));
     private static RegistryEntry<ArmorMaterial> register(
             String id,
             EnumMap<ArmorItem.Type, Integer> defense,

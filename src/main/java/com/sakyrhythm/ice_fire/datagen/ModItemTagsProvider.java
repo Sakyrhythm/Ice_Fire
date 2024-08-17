@@ -23,5 +23,10 @@ public class ModItemTagsProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.ICE_DIAMOND_CHESTPLATE)
                 .add(ModItems.ICE_DIAMOND_LEGGINGS)
                 .add(ModItems.ICE_DIAMOND_BOOTS);
+        getOrCreateTagBuilder(ItemTags.TRIMMABLE_ARMOR)
+                .add(ModItems.FIRE_CRYSTAL_SHARD_HELMET)
+                .add(ModItems.FIRE_CRYSTAL_SHARD_CHESTPLATE)
+                .add(ModItems.FIRE_CRYSTAL_SHARD_LEGGINGS)
+                .add(ModItems.FIRE_CRYSTAL_SHARD_BOOTS);
     }
 }

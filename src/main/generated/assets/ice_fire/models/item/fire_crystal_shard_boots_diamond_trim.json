@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ice_fire:item/fire_crystal_shard_boots",
+    "layer1": "minecraft:trims/items/boots_trim_diamond"
+  }
+}

@@ -80,6 +80,15 @@ public class ModItems {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(47))));
     public static final Item ICE_DIAMOND_BOOTS = registerItems("ice_diamond_boots",new ArmorItem(ModArmorMaterial.ICE_DIAMOND, ArmorItem.Type.BOOTS,new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(47))));
+    //火属性装备
+    public static final Item FIRE_CRYSTAL_SHARD_HELMET = registerItems("fire_crystal_shard_helmet",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.HELMET,new Item.Settings()
+            .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(47))));
+    public static final Item FIRE_CRYSTAL_SHARD_CHESTPLATE = registerItems("fire_crystal_shard_chestplate",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.CHESTPLATE,new Item.Settings()
+            .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(47))));
+    public static final Item FIRE_CRYSTAL_SHARD_LEGGINGS = registerItems("fire_crystal_shard_leggings",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.LEGGINGS,new Item.Settings()
+            .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(47))));
+    public static final Item FIRE_CRYSTAL_SHARD_BOOTS = registerItems("fire_crystal_shard_boots",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.BOOTS,new Item.Settings()
+            .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(47))));
 
     private static Item registerItems(String name,Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Ice_Fire.MOD_ID,name),item);
@@ -130,6 +139,11 @@ public class ModItems {
             entries.add(ModItems.ICE_DIAMOND_CHESTPLATE);
             entries.add(ModItems.ICE_DIAMOND_LEGGINGS);
             entries.add(ModItems.ICE_DIAMOND_BOOTS);
+
+            entries.add(ModItems.FIRE_CRYSTAL_SHARD_HELMET);
+            entries.add(ModItems.FIRE_CRYSTAL_SHARD_CHESTPLATE);
+            entries.add(ModItems.FIRE_CRYSTAL_SHARD_LEGGINGS);
+            entries.add(ModItems.FIRE_CRYSTAL_SHARD_BOOTS);
         });
     }
 }
