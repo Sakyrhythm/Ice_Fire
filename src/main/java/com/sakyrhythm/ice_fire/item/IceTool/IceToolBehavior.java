@@ -2,9 +2,15 @@ package com.sakyrhythm.ice_fire.item.IceTool;
 
 import com.sakyrhythm.ice_fire.item.ModItems;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.effect.StatusEffect;
+import net.minecraft.entity.effect.StatusEffectInstance;
+import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.registry.Registries;
+import net.minecraft.registry.Registry;
+import net.minecraft.registry.entry.RegistryEntry;
 
 import java.util.List;
 
@@ -28,5 +34,17 @@ public interface IceToolBehavior {
             }
         }
         return false;
+    }
+
+    /**
+     * 给实体效果
+     * @param target 目标实体
+     * @param effect 需要个给予的效果，即StatusEffects.XXX
+     * @param duration 效果时长（tick为单位）
+     * @param amplifier 效果等级（注意：0等于1级，1等于2级，2等于3级，以此类推）
+     */
+    static void giveEffect(LivingEntity target, RegistryEntry<StatusEffect> effect, int duration, int amplifier){
+        StatusEffectInstance instance = new StatusEffectInstance(effect,duration,amplifier);
+        target.addStatusEffect(instance);
     }
 }
