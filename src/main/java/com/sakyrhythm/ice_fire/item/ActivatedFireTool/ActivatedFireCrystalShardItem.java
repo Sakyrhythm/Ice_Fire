@@ -4,7 +4,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 
-public class ActivatedFireCrystalShardItem extends Item {
+public class ActivatedFireCrystalShardItem extends Item{
 
     public ActivatedFireCrystalShardItem(Settings settings) {
         super(settings);
