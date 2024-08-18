@@ -1,5 +1,6 @@
 package com.sakyrhythm.ice_fire.item.ActivatedFireTool;
 
+import com.sakyrhythm.ice_fire.entity.AxeEntity;
 import com.sakyrhythm.ice_fire.item.ModToolMaterial;
 import net.fabricmc.fabric.api.item.v1.EnchantingContext;
 import net.minecraft.block.BlockState;
@@ -87,14 +88,14 @@ public class ActivatedFireCrystalShardAxe extends AxeItem implements ProjectileI
                         if (!world.isClient) {
                             stack.damage(1, playerEntity, LivingEntity.getSlotForHand(user.getActiveHand()));
                             if (f == 0.0F) {
-                                TridentEntity tridentEntity = new TridentEntity(world, playerEntity, stack);
-                                tridentEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F, 1.0F);
+                                AxeEntity axeEntity = new AxeEntity(world, playerEntity, stack);
+                                axeEntity.setVelocity(playerEntity, playerEntity.getPitch(), playerEntity.getYaw(), 0.0F, 2.5F, 1.0F);
                                 if (playerEntity.isInCreativeMode()) {
-                                    tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
+                                    axeEntity.pickupType = PersistentProjectileEntity.PickupPermission.CREATIVE_ONLY;
                                 }
 
-                                world.spawnEntity(tridentEntity);
-                                world.playSoundFromEntity(null, tridentEntity, registryEntry.value(), SoundCategory.PLAYERS, 1.0F, 1.0F);
+                                world.spawnEntity(axeEntity);
+                                world.playSoundFromEntity(null, axeEntity, registryEntry.value(), SoundCategory.PLAYERS, 1.0F, 1.0F);
                                 if (!playerEntity.isInCreativeMode()) {
                                     playerEntity.getInventory().removeOne(stack);
                                 }
@@ -159,9 +160,9 @@ public class ActivatedFireCrystalShardAxe extends AxeItem implements ProjectileI
 
     @Override
     public ProjectileEntity createEntity(World world, Position pos, ItemStack stack, Direction direction) {
-        TridentEntity tridentEntity = new TridentEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1));
-        tridentEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
-        return tridentEntity;
+        TridentEntity axeEntity = new TridentEntity(world, pos.getX(), pos.getY(), pos.getZ(), stack.copyWithCount(1));
+        axeEntity.pickupType = PersistentProjectileEntity.PickupPermission.ALLOWED;
+        return axeEntity;
     }
 
     @Override
