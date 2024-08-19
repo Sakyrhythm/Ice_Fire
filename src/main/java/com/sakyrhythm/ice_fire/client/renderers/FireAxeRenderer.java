@@ -1,6 +1,8 @@
 package com.sakyrhythm.ice_fire.client.renderers;
 
+import com.sakyrhythm.ice_fire.Ice_Fire;
 import com.sakyrhythm.ice_fire.item.ActivatedFireTool.FireAxeEntity;
+import net.minecraft.client.render.entity.EntityRenderDispatcher;
 import net.minecraft.client.render.entity.EntityRenderer;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.util.Identifier;
@@ -12,8 +14,7 @@ public class FireAxeRenderer extends EntityRenderer<FireAxeEntity> {
 
     @Override
     public Identifier getTexture(FireAxeEntity entity) {
-        //TODO 完成它
-        return;
+        return Identifier.of(Ice_Fire.MOD_ID, "ice_fire:item/activated_fire_crystal_shard_axe");
     }
 
 }

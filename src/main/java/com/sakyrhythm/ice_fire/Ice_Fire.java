@@ -24,7 +24,7 @@ public class Ice_Fire implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static final String MOD_ID = "ice_fire";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-	public static final EntityType<FireAxeEntity> FIRE_AXE = Registry.register(
+	public static final EntityType<Entity> FIRE_AXE = Registry.register(
 			Registries.ENTITY_TYPE,
 			Identifier.of(MOD_ID, "fire_axe"),
 			EntityType.Builder.create(FireAxeEntity::new, SpawnGroup.MISC).build("fire_axe")

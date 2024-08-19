@@ -8,10 +8,12 @@ import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.render.RenderLayer;
 
+import static com.sakyrhythm.ice_fire.Ice_Fire.FIRE_AXE;
+
 public class Ice_FireClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         //BlockRenderLayerMap.INSTANCE.putBlock(ICE_DIAMOND_BLOCK.ICE_DIAMOND_BLOCK, RenderLayer.getCutout());
-        EntityRendererRegistry.register(Ice_Fire.FIRE_AXE, FireAxeRenderer::new);
+        EntityRendererRegistry.register(FIRE_AXE, (context) -> new FireAxeRenderer(context));
     }
 }
