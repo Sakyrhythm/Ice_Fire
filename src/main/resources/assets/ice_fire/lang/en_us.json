@@ -39,5 +39,7 @@
   "item.ice_fire.fire_crystal_shard_helmet": "Fire crystal shard helmet",
   "item.ice_fire.fire_crystal_shard_chestplate": "Fire crystal shard chestplate",
   "item.ice_fire.fire_crystal_shard_leggings": "Fire crystal shard leggings",
-  "item.ice_fire.fire_crystal_shard_boots": "Fire crystal shard boots"
+  "item.ice_fire.fire_crystal_shard_boots": "Fire crystal shard boots",
+
+  "item.ice_fire.gunitem": "Pistol"
 }

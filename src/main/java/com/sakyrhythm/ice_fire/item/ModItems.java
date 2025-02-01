@@ -89,7 +89,9 @@ public class ModItems {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(47))));
     public static final Item FIRE_CRYSTAL_SHARD_BOOTS = registerItems("fire_crystal_shard_boots",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.BOOTS,new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(47))));
+
     public static final Item GunItem = registerItems("gunitem",new GunItem(new Item.Settings()));
+    public static final Item BulletItem = registerItems("bulletitem",new BulletItem(new Item.Settings()));
 
     private static Item registerItems(String name,Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Ice_Fire.MOD_ID,name),item);
@@ -107,6 +109,7 @@ public class ModItems {
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(entries -> {
 
             entries.add(ModItems.GunItem);
+            entries.add(ModItems.BulletItem);
             entries.add(ModItems.ICE_DIAMOND);
             entries.add(ModItems.FIRE_CRYSTAL_SHARD);
             entries.add(ModItems.ACTIVATED_ICE_DIAMOND);

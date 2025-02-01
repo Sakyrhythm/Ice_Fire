@@ -1,14 +1,15 @@
 {
-	"required": true,
-	"package": "com.sakyrhythm.ice_fire.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"Ice_FireMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"client": [
-		"RenderLayersMixin"
+  "required": true,
+  "package": "com.sakyrhythm.ice_fire.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "Ice_FireMixin",
+    "LivingEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "RenderLayersMixin"
 	]
 }

@@ -2,9 +2,11 @@ package com.sakyrhythm.ice_fire;
 
 import com.sakyrhythm.ice_fire.block.ICE_DIAMOND_BLOCK;
 import com.sakyrhythm.ice_fire.block.ModBlocks;
+import com.sakyrhythm.ice_fire.entity.ModEntities;
 import com.sakyrhythm.ice_fire.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
+import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
