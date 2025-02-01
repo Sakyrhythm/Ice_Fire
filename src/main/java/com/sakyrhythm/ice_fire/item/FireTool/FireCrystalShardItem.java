@@ -10,6 +10,7 @@ public class FireCrystalShardItem extends Item {
         super(settings);
     }
 
+
     @Override
     public boolean postHit(ItemStack stack, LivingEntity target,LivingEntity attacker){
         return FireToolBehavior.postHit(stack,target,attacker);

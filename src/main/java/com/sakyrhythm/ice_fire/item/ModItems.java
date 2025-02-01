@@ -64,7 +64,7 @@ public class ModItems {
     public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SHOVEL = registerItems("activated_fire_crystal_shard_shovel",new ActivatedFireCrystalShardShovel(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,1.5F,0.0F))));
     public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_SWORD = registerItems("activated_fire_crystal_shard_sword",new ActivatedFireCrystalShardSword(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
-            .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,26.0F,0.0F))));
+            .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,26.0F,1.0F))));
     public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_PICKAXE = registerItems("activated_fire_crystal_shard_pickaxe",new ActivatedFireCrystalShardPickAxe(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
             .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,1F,0.0F))));
     public static final Item ACTIVATED_FIRE_CRYSTAL_SHARD_HOE = registerItems("activated_fire_crystal_shard_hoe",new ActivatedFireCrystalShardHoe(ModToolMaterial.ACTIVATED_FIRE_CRYSTAL_SHARD,new Item.Settings()
@@ -89,6 +89,7 @@ public class ModItems {
             .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(47))));
     public static final Item FIRE_CRYSTAL_SHARD_BOOTS = registerItems("fire_crystal_shard_boots",new ArmorItem(ModArmorMaterial.FIRE_CRYSTAL_SHARD, ArmorItem.Type.BOOTS,new Item.Settings()
             .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(47))));
+    public static final Item GunItem = registerItems("gunitem",new GunItem(new Item.Settings()));
 
     private static Item registerItems(String name,Item item){
         return Registry.register(Registries.ITEM, Identifier.of(Ice_Fire.MOD_ID,name),item);
@@ -104,6 +105,8 @@ public class ModItems {
     public static void registerModItemGroups() {
         Registry.register(Registries.ITEM_GROUP, CUSTOM_ITEM_GROUP_KEY, ICE_FIRE);
         ItemGroupEvents.modifyEntriesEvent(CUSTOM_ITEM_GROUP_KEY).register(entries -> {
+
+            entries.add(ModItems.GunItem);
             entries.add(ModItems.ICE_DIAMOND);
             entries.add(ModItems.FIRE_CRYSTAL_SHARD);
             entries.add(ModItems.ACTIVATED_ICE_DIAMOND);
